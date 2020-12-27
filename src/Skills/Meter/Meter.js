@@ -7,7 +7,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>Html</h3>
-                    <span className="percent">87%</span>
+                    <span className="percent">90%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
@@ -34,6 +34,18 @@ const Meter = () => {
                     <div className="progress" style={{"width": "90%"}}></div>
                 </div>
             </div>
+
+            <div className="skills">
+                <div className="skill-label">
+                    <h3>Typescript</h3>
+                    <span className="percent">80%</span>
+                    <div style={{"clear": "both"}}></div>
+                </div>
+                <div className="bar">
+                    <div className="progress" style={{"width": "80%"}}></div>
+                </div>
+            </div>
+
             <div className="skills">
                 <div className="skill-label">
                     <h3>React</h3>
@@ -47,22 +59,46 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>Angular</h3>
-                    <span className="percent">70%</span>
+                    <span className="percent">75%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
-                    <div className="progress" style={{"width": "70%"}}></div>
+                    <div className="progress" style={{"width": "75%"}}></div>
                 </div>
             </div>
 
             <div className="skills">
                 <div className="skill-label">
                     <h3>JQuery</h3>
-                    <span className="percent">72%</span>
+                    <span className="percent">80%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
-                    <div className="progress" style={{"width": "72%"}}></div>
+                    <div className="progress" style={{"width": "80%"}}></div>
+                </div>
+            </div>
+
+            <div className="skills">
+                <div className="skill-label">
+                    <h3>Bootstrap</h3>
+                    <span className="percent">80%</span>
+                    <div style={{"clear": "both"}}></div>
+                </div>
+                <div className="bar">
+                    <div className="progress" style={{"width": "80%"}}></div>
+                </div>
+            </div>
+
+
+            
+            <div className="skills">
+                <div className="skill-label">
+                    <h3>Nodejs</h3>
+                    <span className="percent">50%</span>
+                    <div style={{"clear": "both"}}></div>
+                </div>
+                <div className="bar">
+                    <div className="progress" style={{"width": "50%"}}></div>
                 </div>
             </div>
         </div>

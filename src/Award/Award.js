@@ -13,7 +13,7 @@ const Award = () => {
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/responsive-web-design">
+            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/responsive-web-design" target="_blank">
               Responsive Web Design
                 </a>
           </li>
@@ -22,7 +22,7 @@ const Award = () => {
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/javascript-algorithms-and-data-structures">
+            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/javascript-algorithms-and-data-structures" target="_blank">
               Javascript Algorithms and Data-structures
                 </a>
           </li>
@@ -30,7 +30,7 @@ const Award = () => {
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/apis-and-microservices">
+            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/apis-and-microservices" target="_blank">
               Apis and Microservices
                 </a>
 
@@ -39,7 +39,7 @@ const Award = () => {
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.hackerrank.com/certificates/30d2d4a36818">
+            <a href="https://www.hackerrank.com/certificates/30d2d4a36818" target="_blank">
               React (Hackerrank)
                 </a>
           </li>
@@ -47,7 +47,7 @@ const Award = () => {
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.hackerrank.com/certificates/8379abc5d679">
+            <a href="https://www.hackerrank.com/certificates/8379abc5d679" target="_blank">
               Python (Hackerrank)
                 </a>
           </li>
