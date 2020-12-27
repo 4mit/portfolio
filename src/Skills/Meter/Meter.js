@@ -7,7 +7,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>Html</h3>
-                    <span className="percent">90%</span>
+                    <span className="percent imp-skills">90%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
@@ -17,7 +17,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>CSS</h3>
-                    <span className="percent">90%</span>
+                    <span className="percent imp-skills">90%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
@@ -27,7 +27,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>Javascript</h3>
-                    <span className="percent">90%</span>
+                    <span className="percent imp-skills">90%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
@@ -38,7 +38,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>Typescript</h3>
-                    <span className="percent">80%</span>
+                    <span className="percent imp-skills">80%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
@@ -70,7 +70,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>JQuery</h3>
-                    <span className="percent">80%</span>
+                    <span className="percent imp-skills">80%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
@@ -81,7 +81,7 @@ const Meter = () => {
             <div className="skills">
                 <div className="skill-label">
                     <h3>Bootstrap</h3>
-                    <span className="percent">80%</span>
+                    <span className="percent imp-skills">80%</span>
                     <div style={{"clear": "both"}}></div>
                 </div>
                 <div className="bar">
