@@ -8,15 +8,9 @@
   <meta name="description" content="" />
   <meta name="author" content="Amit Kumar Soni" />  
   <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
-  <!-- Font Awesome icons (free version)-->
-  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>  
+  
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="./assets/css/styles.css" rel="stylesheet" />
-  <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,13 +18,64 @@
 		You need to enable JavaScript to run this app.
 	</noscript>
 	<div id="root"></div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="./assets/js/scripts.js"></script>    
+    
+    <!-- Third party plugin JS-->    
+    <script>
+      window.onload = function() {
+        let head = document.getElementsByTagName('head')[0];
+
+        let d560 = document.createElement('link');
+        d560.setAttribute('rel','stylesheet')
+        d560.setAttribute('type','text/css')
+        d560.setAttribute('media','screen and (max-width: 576px)')
+        d560.setAttribute('href', './assets//css/d560.css')
+        head.appendChild(d560)
+
+
+
+        let s1 = document.createElement('script');
+        s1.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        head.appendChild(s1)
+
+        let s2 = document.createElement('script');
+        s2.setAttribute('src', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
+        head.appendChild(s2)
+
+        let s3 = document.createElement('script');
+        s3.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+        head.appendChild(s3)
+
+        let s4 = document.createElement('script');
+        s4.setAttribute('src', 'https://use.fontawesome.com/releases/v5.15.1/js/all.js')
+        head.appendChild(s4)
+
+        let s5 = document.createElement('script');
+        s5.setAttribute('src', './assets/js/scripts.js')
+        head.appendChild(s5)
+
+
+
+        let l = document.createElement('link');
+        l.setAttribute('rel','stylesheet')
+        l.setAttribute('type','text/css')
+        l.setAttribute('href', 'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700')
+        head.appendChild(l)
+
+        let l2 = document.createElement('link');
+        l2.setAttribute('rel','stylesheet')
+        l2.setAttribute('type','text/css')
+        l2.setAttribute('href', 'https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i')
+        head.appendChild(l2)
+
+        let l3 = document.createElement('link');
+        l3.setAttribute('rel','stylesheet')
+        l3.setAttribute('type','text/css')
+        l3.setAttribute('href', 'https://fonts.googleapis.com/css2?family=Comfortaa&display=swap')
+        head.appendChild(l3)
+
+
+      };
+    </script>
 </body>
 
 </html>
