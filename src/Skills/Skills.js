@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Meter from './Meter/Meter'
 
 const Skills = () =>{
 
@@ -40,6 +40,7 @@ const Skills = () =>{
                 <i className="fab fa-npm"></i>
               </li>
             </ul>
+            <Meter/>
             <div className="subheading mb-3">Workflow</div>
             <ul className="fa-ul mb-0">
               <li>
@@ -67,6 +68,7 @@ const Skills = () =>{
                 Agile Development & Scrum
               </li>
             </ul>
+            
           </div>
         </section>
   )
