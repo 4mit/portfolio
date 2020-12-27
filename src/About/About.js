@@ -30,10 +30,10 @@ const About = () =>{
     return(
       <section className="resume-section" id="about">
           <div className="resume-section-content">
-            <h1 className="mb-0">
+            <h1 className="mb-0 main-title">
               Amit
               <span className="text-primary">Kumar</span>
-              <span className="text-primarys">Soni</span>
+              {/* <span className="text-primarys">Soni</span> */}
             </h1>
             <div className="subheading mb-5">
               Whitefield Banglore ·

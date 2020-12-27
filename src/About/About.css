@@ -9,3 +9,10 @@
     font-weight: bold;
     height: 4em;
 }
+/* #about{
+    background: linear-gradient(107deg, #ffffff, #ff430096);
+} */
+
+.main-title{
+    font-size: 5rem;
+}

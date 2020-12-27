@@ -19,7 +19,7 @@ export default function App() {
       </div>
       <div className="content">Hello</div> */}
       <Sidenav />
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 main-content">
         <About />
         <hr className="m-0" />
         <Experience />
