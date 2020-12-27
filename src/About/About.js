@@ -19,6 +19,7 @@ const About = () =>{
     useEffect(()=>{    
       ref = setInterval(()=>{        
         let idx = Math.floor(Math.random()* quotes.length-1);
+        if(idx<0) idx =0
         setCurrentQuote(quotes[idx]);
       },2000)
       return () =>{
