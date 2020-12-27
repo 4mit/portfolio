@@ -70,7 +70,7 @@ const Experience = () =>{
                 </div>
               </div>
               <div className="flex-shrink-0">
-                <span className="text-primary">July 2018 - Aprail 2019</span>
+                <span className="text-primary">July 2018 - April 2019</span>
               </div>
             </div>
             <div className="d-flex flex-column flex-md-row justify-content-between mb-5">

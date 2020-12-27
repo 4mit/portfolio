@@ -12,7 +12,7 @@ const Education = () =>{
                   National Institute of Technology Calicut
                 </h3>
                 <div className="subheading mb-3">
-                  Master of Computer Application
+                Master of computer Applications
                 </div>
                 <div>Computer Application </div>
                 <ul>
@@ -32,7 +32,7 @@ const Education = () =>{
                   Pt. Ravishankar Shukla University Raipur
                 </h3>
                 <div className="subheading mb-3">Bachlore of Science (CS)</div>
-                <div>Physics - Computer Science - Maths</div>
+                <div>Computer science - Mathematics - Physics</div>
                 {/* <ul>
                   <li>Data Structure</li>
                   <li>Algorithm</li>
