@@ -56,20 +56,20 @@ const About = () =>{
             </div> 
             <div className="social-icons mt-5">
               <a
-                className="social-icon"
+                className="social-icon" title="Visit My Linkedin profile"
                 href="https://www.linkedin.com/in/amit-amora/"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a className="social-icon" href="https://github.com/4mit">
+              <a className="social-icon" href="https://github.com/4mit" title="Visit My Github profile">
                 <i className="fab fa-github"></i>
               </a>
-              <a className="social-icon" href="https://twitter.com/Amit_amora">
+              <a className="social-icon" href="https://twitter.com/Amit_amora" title="Visit My Twitter profile">
                 <i className="fab fa-twitter"></i>
               </a>
-              {/* <a className="social-icon" href="#">
-                <i className="fab fa-facebook-f"></i>
-              </a> */}
+              <a className="social-icon" href="./assets/amit_react.pdf" title="Download my Resume" target="_blank">
+                <i class="fas fa-file-download"></i>
+              </a>
             </div>
           </div>
         </section>
