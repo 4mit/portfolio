@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './About.css';
+import WelcomeMsg from './WelcomeMsg/WelcomeMsg'
 import { useState } from 'react';
 
 const About = () =>{
@@ -46,6 +47,9 @@ const About = () =>{
               overall value proposition.
             </p>
             <div className="quote mb-5">
+              <p>
+                <WelcomeMsg></WelcomeMsg>
+              </p>
               <quotes>
                 {currentQuote}
               </quotes>
