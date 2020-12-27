@@ -10,7 +10,7 @@ const Interests = () =>{
             <h2 className="mb-5">Interests</h2>
             <p>
               Apart from being a web developer, I enjoy most of my time
-              listening remixes playing Action Games on PC. Sometimes i try gets
+              listening remixes playing Action Games on PC. Sometimes i try to gets
               my hand dirty mixing tracks.
             </p>
           </div>

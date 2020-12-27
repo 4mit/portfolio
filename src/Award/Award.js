@@ -2,20 +2,56 @@ import React from 'react';
 
 
 
-const Award = () =>{
+const Award = () => {
 
   return (
     <section className="resume-section" id="awards">
-          <div className="resume-section-content">
-            <h2 className="mb-5">Awards & Certifications</h2>
-            <ul className="fa-ul mb-0">
-              <li>
-                <span className="fa-li">
-                  <i className="fas fa-trophy text-warning"></i>
-                </span>
-                Coming Soon...
-              </li>
-              {/* <li>
+      <div className="resume-section-content">
+        <h2 className="mb-5">Awards & Certifications</h2>
+        <ul className="fa-ul mb-0">
+          <li>
+            <span className="fa-li">
+              <i className="fas fa-trophy text-warning"></i>
+            </span>
+            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/responsive-web-design">
+              Responsive Web Design
+                </a>
+          </li>
+
+          <li>
+            <span className="fa-li">
+              <i className="fas fa-trophy text-warning"></i>
+            </span>
+            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/javascript-algorithms-and-data-structures">
+              Javascript Algorithms and Data-structures
+                </a>
+          </li>
+          <li>
+            <span className="fa-li">
+              <i className="fas fa-trophy text-warning"></i>
+            </span>
+            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/apis-and-microservices">
+              Apis and Microservices
+                </a>
+
+          </li>
+          <li>
+            <span className="fa-li">
+              <i className="fas fa-trophy text-warning"></i>
+            </span>
+            <a href="https://www.hackerrank.com/certificates/30d2d4a36818">
+              React (Hackerrank)
+                </a>
+          </li>
+          <li>
+            <span className="fa-li">
+              <i className="fas fa-trophy text-warning"></i>
+            </span>
+            <a href="https://www.hackerrank.com/certificates/8379abc5d679">
+              Python (Hackerrank)
+                </a>
+          </li>
+          {/* <li>
                 <span className="fa-li">
                   <i className="fas fa-trophy text-warning"></i>
                 </span>
@@ -59,9 +95,9 @@ const Award = () =>{
                 3<sup>rd</sup>
                 Place - James Buchanan High School - Hackathon 2005
               </li> */}
-            </ul>
-          </div>
-        </section>
+        </ul>
+      </div>
+    </section>
   )
 }
 
