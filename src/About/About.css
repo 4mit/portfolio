@@ -17,3 +17,8 @@
 .main-title{
     font-size: 5rem;
 }
+
+.resume-section-content{
+    display: flex;
+    flex-direction: column;
+}
