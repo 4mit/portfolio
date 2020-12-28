@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState, useContext } from "react";
 
-
+import ThemeContext from "../Theme/ThemeContext";
 
 const Award = () => {
-
+  const { config, current, updater } = useContext(ThemeContext);
+  let theme = config[current];
   return (
-    <section className="resume-section" id="awards">
+    <section
+      className="resume-section"
+      id="awards"
+      style={{ background: theme?.background, color: theme?.foreground }}
+    >
       <div className="resume-section-content">
         <h2 className="mb-5">Awards & Certifications</h2>
         <ul className="fa-ul mb-0">
@@ -13,43 +18,57 @@ const Award = () => {
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/responsive-web-design" target="_blank">
+            <a
+              href="https://www.freecodecamp.org/certification/amitkumarsoni/responsive-web-design"
+              target="_blank"
+            >
               Responsive Web Design
-                </a>
+            </a>
           </li>
 
           <li>
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/javascript-algorithms-and-data-structures" target="_blank">
+            <a
+              href="https://www.freecodecamp.org/certification/amitkumarsoni/javascript-algorithms-and-data-structures"
+              target="_blank"
+            >
               Javascript Algorithms and Data-structures
-                </a>
+            </a>
           </li>
           <li>
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.freecodecamp.org/certification/amitkumarsoni/apis-and-microservices" target="_blank">
+            <a
+              href="https://www.freecodecamp.org/certification/amitkumarsoni/apis-and-microservices"
+              target="_blank"
+            >
               Apis and Microservices
-                </a>
-
+            </a>
           </li>
           <li>
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.hackerrank.com/certificates/30d2d4a36818" target="_blank">
+            <a
+              href="https://www.hackerrank.com/certificates/30d2d4a36818"
+              target="_blank"
+            >
               React (Hackerrank)
-                </a>
+            </a>
           </li>
           <li>
             <span className="fa-li">
               <i className="fas fa-trophy text-warning"></i>
             </span>
-            <a href="https://www.hackerrank.com/certificates/8379abc5d679" target="_blank">
+            <a
+              href="https://www.hackerrank.com/certificates/8379abc5d679"
+              target="_blank"
+            >
               Python (Hackerrank)
-                </a>
+            </a>
           </li>
           {/* <li>
                 <span className="fa-li">
@@ -98,7 +117,7 @@ const Award = () => {
         </ul>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Award;
