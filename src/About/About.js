@@ -54,7 +54,7 @@ const About = () =>{
                 {currentQuote}
               </quotes>
             </div> 
-            <div className="social-icons mt-5">
+            <div className="social-icons mt-5 justify-content-sm-center">
               <a
                 className="social-icon" title="Visit My Linkedin profile"
                 href="https://www.linkedin.com/in/amit-amora/"
