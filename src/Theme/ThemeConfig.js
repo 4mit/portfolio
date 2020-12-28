@@ -5,7 +5,7 @@ const themes = {
   },
   dark: {
     foreground: "#ffffff",
-    background: "rgb(0, 0, 0)"
+    background: "linear-gradient(409deg, #393838cf, #060606c4)"
   }
 };
 
