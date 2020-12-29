@@ -37,7 +37,7 @@ const Sidenav = () =>{
           </span>
         </a>
         <div>
-        <ToggleTheme selectedTheme={currentTheme} onChange={e => updater(e == 'dark' ? 'light' : 'dark')} />
+        {/* <ToggleTheme selectedTheme={currentTheme} onChange={e => updater(e == 'dark' ? 'light' : 'dark')} /> */}
         </div>
         <button
           className="navbar-toggler"
