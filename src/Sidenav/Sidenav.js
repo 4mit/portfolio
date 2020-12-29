@@ -1,7 +1,26 @@
-import React from 'react'
-
+import React, { useEffect, useState, useContext } from "react";
+import ToggleTheme from "react-toggle-theme";
+import ThemeContext from "../Theme/ThemeContext";
 
 const Sidenav = () =>{
+
+  const update = (e) =>{
+    console.log(e)
+
+    if(e == 'dark'){
+      updater('light')
+      setCurrentTheme('light')
+    }else{
+      updater('dark')
+      setCurrentTheme('dark');
+    }
+    
+  }
+  
+  const { config, current, updater } = useContext(ThemeContext);
+  let theme = config[current];
+  let [currentTheme, setCurrentTheme] = useState(theme) ;
+
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -12,11 +31,14 @@ const Sidenav = () =>{
           <span className="d-none d-lg-block">
             <img
               className="img-fluid img-profile rounded-circle mx-auto mb-2"
-              src="assets/img/1568397890204.jpg"
-              alt=""
+              src="assets/img/1568397890204.webp"
+              alt="img" loading="lazy" height="167" width="167"
             />
           </span>
         </a>
+        <div>
+        <ToggleTheme selectedTheme={currentTheme} onChange={e => updater(e == 'dark' ? 'light' : 'dark')} />
+        </div>
         <button
           className="navbar-toggler"
           type="button"

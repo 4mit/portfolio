@@ -43,10 +43,12 @@
 
         let s3 = document.createElement('script');
         s3.setAttribute('src', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+        s3.defer=true;
         head.appendChild(s3)
 
         let s4 = document.createElement('script');
         s4.setAttribute('src', 'https://use.fontawesome.com/releases/v5.15.1/js/all.js')
+        s4.defer= true;
         head.appendChild(s4)
 
         let s5 = document.createElement('script');
