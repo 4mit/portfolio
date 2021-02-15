@@ -16,6 +16,22 @@ const Experience = () => {
         <h2 className="mb-5">Experience</h2>
         <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
           <div className="flex-grow-1">
+            <h3 className="mb-0">UI Engineer</h3>
+            <div className="subheading mb-3">Acko - Bangalore India</div>
+            <div>
+              <ul>
+                <li>Working on Core feature development for Health- product.</li>
+                
+              </ul>
+            </div>
+          </div>
+          <div className="flex-shrink-0">
+            <span className="text-primary">December 2020 - Present</span>
+          </div>
+        </div>
+
+        <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div className="flex-grow-1">
             <h3 className="mb-0">Application Services Engineer</h3>
             <div className="subheading mb-3">Maistering B.V. India</div>
             <div>
