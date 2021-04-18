@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import Emoji from "react-emojis";
-import ThemeContext from "../../Theme/ThemeContext";
+import ThemeContext from "../../../Theme/ThemeContext";
 
 const WelcomeMsg = () => {
   const { config, current, updater } = useContext(ThemeContext);

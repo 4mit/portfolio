@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import ThemeContext from "../Theme/ThemeContext";
+import ThemeContext from "../../Theme/ThemeContext";
 
 const Education = () => {
   const { config, current, updater } = useContext(ThemeContext);

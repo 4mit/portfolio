@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./About.css";
 import WelcomeMsg from "./WelcomeMsg/WelcomeMsg";
-import ThemeContext from "../Theme/ThemeContext";
+import ThemeContext from "../../Theme/ThemeContext";
 
 const About = () => {
   const { config, current, updater } = useContext(ThemeContext);

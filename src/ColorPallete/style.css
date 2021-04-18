@@ -1,0 +1,31 @@
+.clr-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.clr-header {
+  flex-grow: 1;
+}
+.clr-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  min-height: 15vh;
+  box-shadow: 0 10px 40px -10px rgb(0 64 128 / 20%);
+}
+
+.clr-box__footer {
+}
+.clr-box__footer-content {
+  display: flex;
+}
+
+.clr-box__footer-content ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1rem;
+}
