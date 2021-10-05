@@ -42,6 +42,9 @@ const Portfolio = () => {
 
         <Suspense fallback={<div>Loading...</div>}>
         <Switch>
+            <Route path='/' exact>
+              <About />
+            </Route>
             <Route path={`${path}/about`} exact>
               <About />
             </Route>

@@ -21,6 +21,9 @@ export default function App() {
       >
         <div className="container-fluid p-0 main-content">
           <Switch>
+          <Route path="/" exact>
+              <Portfolio />
+            </Route>
             <Route path="/portfolio">
               <Portfolio />
             </Route>
