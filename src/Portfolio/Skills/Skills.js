@@ -1,8 +1,8 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, {  useContext } from "react";
 import Meter from "./Meter/Meter";
 import ThemeContext from "../../Theme/ThemeContext";
 const Skills = () => {
-  const { config, current, updater } = useContext(ThemeContext);
+  const { config, current } = useContext(ThemeContext);
   let theme = config[current];
   return (
     <section
