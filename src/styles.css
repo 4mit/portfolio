@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @charset "UTF-8";
 :root {
   --blue: #007bff;
@@ -9333,11 +9337,6 @@ a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-body {
-  padding-top: 3.375rem;
-  color: #6c757d;
-}
-
 .portfolioContainer {
   position: "absolute";
   left: 0;
