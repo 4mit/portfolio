@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles.css";
 import Portfolio from "./Portfolio/index";
 import Blog from "./Blog/index";
@@ -21,7 +21,7 @@ export default function App() {
       >
         <div className="container-fluid p-0 main-content">
           <Switch>
-            <Route path="/" exact>
+          <Route path="/" exact>
               <Portfolio />
             </Route>
             <Route path="/portfolio">

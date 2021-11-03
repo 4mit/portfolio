@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import "./Experience.css";
 import ThemeContext from "../../Theme/ThemeContext";
 const people = [

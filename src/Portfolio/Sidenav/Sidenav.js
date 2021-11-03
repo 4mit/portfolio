@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
-import ToggleTheme from "react-toggle-theme";
+import React, { useState, useContext } from "react";
 import ThemeContext from "../../Theme/ThemeContext";
 import { Link } from "react-router-dom";
 

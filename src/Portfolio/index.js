@@ -32,18 +32,14 @@ const Portfolio = () => {
       <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
 
-          <Suspense fallback={<div>Loading...</div>}>
-            <Switch>
-              <Route path={`${path}/`} exact>
-                <About />
-              </Route>
-              <Route path={`${path}/about`} exact>
-                <About />
-              </Route>
-
-              <Route path={`${path}/experiance`} exact>
-                <Experience />
-              </Route>
+        <Suspense fallback={<div>Loading...</div>}>
+        <Switch>
+            <Route path='/' exact>
+              <About />
+            </Route>
+            <Route path={`${path}/about`} exact>
+              <About />
+            </Route>
 
               <Route path={`${path}/education`}>
                 <Education />
