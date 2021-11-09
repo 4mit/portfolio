@@ -2,9 +2,10 @@ export const attachTooltip = (parent) => {
   let tooltip = document.createElement("div");
   tooltip.innerHTML = "Copied..";
   tooltip.style.position = "absolute";
-  tooltip.style.top = 0;
-  tooltip.style.right = 0;
-  tooltip.style.padding = "0px 10px";
+  tooltip.style.top = '50%';
+  tooltip.style.left = '50%';
+  tooltip.style.transform = 'translate(-50%,-50%)';
+  tooltip.style.padding = "7px 18px";
   tooltip.style.backgroundColor = "white";
   tooltip.style.fontSize = "1rem";
   parent.appendChild(tooltip);

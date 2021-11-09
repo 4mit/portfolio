@@ -7,7 +7,7 @@ import NotFound from "./Notfound";
 import themes from "./Theme/ThemeConfig";
 // import AutoComplete from "./AutoComplete/AutoComplete";
 import ThemeContext from "./Theme/ThemeContext";
-import ColorPallete from './ColorPallete/index'
+import ColorPallete from "./ColorPallete/index";
 export default function App() {
   const [theme, setTheme] = useState("dark");
   return (
@@ -21,7 +21,7 @@ export default function App() {
       >
         <div className="container-fluid p-0 main-content">
           <Switch>
-          <Route path="/" exact>
+            <Route path="/" exact>
               <Portfolio />
             </Route>
             <Route path="/portfolio">
@@ -32,7 +32,7 @@ export default function App() {
             </Route>
 
             <Route path="/color-pallete">
-            <ColorPallete/>
+              <ColorPallete />
             </Route>
             <Route path="*">
               <NotFound />

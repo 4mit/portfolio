@@ -1,23 +1,28 @@
-.lead{
-    font-family: 'Comfortaa', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+.them-changer {
+  position: absolute;
+  top: 50;
+  right: 0;
+}
+.quote {
+  padding: 0em 0px;
+  font-style: italic;
+  font-weight: bold;
+  height: 4em;
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
-.quote{
-    padding: 0em 0px;
-    font-style: italic;
-    font-weight: bold;
-    height: 4em;
-}
-#about{
-    display: flex;
-    flex-direction: column;
+.main-title {
+  font-size: 5rem;
 }
 
-.main-title{
-    font-size: 5rem;
-}
-
-.resume-section-content{
-    display: flex;
-    flex-direction: column;
+.resume-section-content {
+  display: flex;
+  flex-direction: column;
 }

@@ -2,9 +2,15 @@ import React, { useEffect, useState, useContext } from "react";
 import "./About.css";
 import WelcomeMsg from "./WelcomeMsg/WelcomeMsg";
 import ThemeContext from "../../Theme/ThemeContext";
+import { PARTICLE_CONFIG } from "./prticleConfig";
+import SocialBanner from "./SocialBanner";
+import { ReactComponent as YourSvg } from "./moon.svg";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 const About = () => {
   const { config, current, updater } = useContext(ThemeContext);
+  const [isDarkMode, setIsDarkMode] = useState(() => true);
+
   let theme = config[current];
   console.log("theme", theme);
   let ref = null;
@@ -14,21 +20,13 @@ const About = () => {
     "“Don’t Let Yesterday Take Up Too Much Of Today.” – Will Rogers",
     " “You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.”",
     "“It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.” – Inspirational Quote By Vince Lombardi",
-    "“If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.” – Steve Jobs"
+    "“If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.” – Steve Jobs",
   ]);
 
   let [currentQuote, setCurrentQuote] = useState("Loading....");
 
   useEffect(() => {
-    //ref =
-    setInterval(() => {
-      let idx = Math.floor(Math.random() * quotes.length - 1);
-      if (idx < 0) idx = 0;
-      setCurrentQuote(quotes[idx]);
-    }, 5000);
-    // return () => {
-    //   ref = null;
-    // };
+    particlesJS("about", PARTICLE_CONFIG);
   }, []);
 
   return (
@@ -37,58 +35,32 @@ const About = () => {
       id="about"
       style={{ background: theme?.background, color: theme?.foreground }}
     >
-      <div className="resume-section-content">
-        <h1 className="mb-0 main-title">
-          Amit
-          <span className="text-primary">Kumar</span>
-          {/* <span className="text-primarys">Soni</span> */}
-        </h1>
-        <div className="subheading mb-5">
-          Whitefield Banglore ·
-          <a href="mailto:amitamora@gmail.com">amitamora@gmail.com</a>
-        </div>
-        <p className="lead mb-5">
-          I am experienced in leveraging UI frameworks to provide a robust
-          synopsis for high level overviews. Iterative approaches to corporate
-          strategy foster collaborative thinking to further the overall value
-          proposition.
-        </p>
-        <div className="quote mb-5">
-          <p>
-            <WelcomeMsg></WelcomeMsg>
-          </p>
-          <quotes>{currentQuote}</quotes>
-        </div>
-        <div className="social-icons mt-5 justify-content-sm-center">
-          <a
-            className="social-icon"
-            title="Visit My Linkedin profile"
-            href="https://www.linkedin.com/in/amit-amora/"
-          >
-            <i className="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            className="social-icon"
-            href="https://github.com/4mit"
-            title="Visit My Github profile"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          <a
-            className="social-icon"
-            href="https://twitter.com/Amit_amora"
-            title="Visit My Twitter profile"
-          >
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a
-            className="social-icon"
-            href="./assets/amit_react.pdf"
-            title="Download my Resume"
-            target="_blank"
-          >
-            <i class="fas fa-file-download"></i>
-          </a>
+      <div
+        className="absolute-center flex flex-column"
+        style={{ alignItems: "center" }}
+      >
+        <p className="bio-title">Hi</p>
+        <img
+          src="../assets/img/1568397890204.webp"
+          style={{
+            height: 130,
+            width: 130,
+            verticalAlign: "middle",
+            textAlign: "center",
+            borderRadius: "50%",
+          }}
+        />
+        <br />
+        <p className="bio-title">I'm Amit Kumar soni</p>
+        <p className="bio-subtitle">A frontend developer</p>
+
+        <SocialBanner />
+        <div>
+          <DarkModeToggle
+            onChange={setIsDarkMode}
+            checked={isDarkMode}
+            size={80}
+          />
         </div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,9 +7,9 @@ import {
   useLocation,
   useRouteMatch,
 } from "react-router-dom";
-import TopNav from './Topnav'
 import Sidenav from "./Sidenav/Sidenav";
-const About = React.lazy(() => import('./About/About.js'));
+import TopNav from "./Topnav";
+const About = React.lazy(() => import("./About/About.js"));
 //const  Sidenav = React.lazy(() => import("./Sidenav/Sidenav"));
 const Experience = React.lazy(() => import("./Experience/Experience"));
 const Education = React.lazy(() => import("./Education/Education"));
@@ -22,24 +21,17 @@ const NotFound = React.lazy(() => import("./404"));
 const Portfolio = () => {
   let { path, url } = useRouteMatch();
   let location = useLocation();
-
-  console.log("path, url>>>>", path, url);
-
   return (
-    <div className="mportfolioContainer">
-      <TopNav />
-
       <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={300}>
-
-        <Suspense fallback={<div>Loading...</div>}>
-        <Switch>
-            <Route path='/' exact>
-              <About />
-            </Route>
-            <Route path={`${path}/about`} exact>
-              <About />
-            </Route>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Switch>
+              <Route path="/" exact>
+                <About />
+              </Route>
+              <Route path={`${path}/about`} exact>
+                <About />
+              </Route>
 
               <Route path={`${path}/education`}>
                 <Education />
@@ -62,10 +54,8 @@ const Portfolio = () => {
               </Route>
             </Switch>
           </Suspense>
-
         </CSSTransition>
       </TransitionGroup>
-    </div>
   );
 };
 export default Portfolio;

@@ -11,10 +11,17 @@
     "@craco/craco": "^6.4.0",
     "@headlessui/react": "^1.4.1",
     "@heroicons/react": "^1.0.5",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-router-dom": "^5.3.2",
+    "@types/react-transition-group": "^4.4.4",
     "antd": "^4.16.13",
     "ax": "0.2.2",
     "axios": "^0.22.0",
     "react": "17.0.0",
+    "react-dark-mode-toggle": "^0.2.0",
     "react-dom": "17.0.0",
     "react-emojis": "^1.0.6",
     "react-router-dom": "^5.2.0",
@@ -26,7 +33,7 @@
     "autoprefixer": "^9.8.8",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
-    "typescript": "3.8.3"
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "eject": "react-scripts eject",

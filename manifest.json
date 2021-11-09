@@ -1,0 +1,31 @@
+{
+    "name": "my a--",
+    "short_name":"short",
+    "start_url":"/index.html",
+    "scope":".",
+    "prefer_related_applications": true,
+    "display":"standalone",
+    "background_color":"red",
+    "theme_color":"green",
+    "description":"my description",
+    "dir":"ltr",
+    "lang":"en-Us",
+    "orientation":"any",
+    "icons":[
+        {
+            "src":"/src/assets/img/dp.png",
+            "type":"image/png",
+            "sizes":"48x48"
+        },
+        {
+            "src":"/src/assets/img/dp.png",
+            "type":"image/png",
+            "sizes":"144x144"
+        },
+        {
+            "src":"/src/assets/img/dp.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        }
+    ]
+}
